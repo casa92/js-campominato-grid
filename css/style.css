@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------COMMON--------------*/
+body {
+    font-size: 18px;
+}
+
+.app-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #7fffd4;
+}
+.ms_container {
+    width: 97%;
+    margin: auto;
+}
+.ms_col {
+    float: left;
+}
+
+/*--------------HEADER--------------*/
+header {
+    height: 80px;
+    background-color: #fff;
+    line-height: 80px;
+}
+.logo_and_title {
+    float: left;
+}
+.play_game {
+    float: right;
+}
+.play_game select {
+    width: 150px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgb(235, 235, 235);
+}
+.play_game button {
+    width: 70px;
+    height: 22px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+}
+
+/*---------------MAIN---------------*/
+main {
+    height: calc( 100vh - 150px );
+}
+
+/*--------------FOOTER--------------*/
+footer {
+    height: 70px;
+    background-color: #fff;
+    line-height: 70px;
+}
+.author i {
+    font-size: 16px;
+}
