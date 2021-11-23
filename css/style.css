@@ -7,6 +7,7 @@
 /*--------------COMMON--------------*/
 body {
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .app-wrapper {
@@ -17,9 +18,6 @@ body {
 .ms_container {
     width: 97%;
     margin: auto;
-}
-.ms_col {
-    float: left;
 }
 
 /*--------------HEADER--------------*/
@@ -36,13 +34,11 @@ header {
 }
 .play_game select {
     width: 150px;
-    height: 22px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    background-color: rgb(235, 235, 235);
 }
 .play_game button {
     width: 70px;
+}
+.header_btn {
     height: 22px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -52,6 +48,41 @@ header {
 /*---------------MAIN---------------*/
 main {
     height: calc( 100vh - 150px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my_grid {
+    width: calc( 100vh - 300px );
+    height: calc( 100vh - 300px );
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+}
+.square {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.square_7 {
+    width: calc(( (100vh - 300px) - 2px) / 7);
+    height: calc(( (100vh - 300px) - 2px) / 7);
+}
+.square_9 {
+    width: calc(( (100vh - 300px) - 2px) / 9);
+    height: calc(( (100vh - 300px) - 2px) / 9);
+}
+.square_10 {
+    width: calc(( (100vh - 300px) - 2px) / 10);
+    height: calc(( (100vh - 300px) - 2px) / 10);
+}
+.square.actvive {
+    background-color: #6495ed;
+    color: #fff;
 }
 
 /*--------------FOOTER--------------*/
